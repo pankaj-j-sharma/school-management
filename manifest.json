@@ -1,0 +1,21 @@
+{
+  "name": "InCampus",
+  "short_name": "Incampus",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#008ba6",
+  "description": "An app to manage all your schooling needs",
+  "theme_color": "#008ba6",
+  "icons": [
+    {
+      "src": "./img/incampustitle.jpeg",
+      "sizes": "1280x1280",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./img/incampus_144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }	
+  ]
+}

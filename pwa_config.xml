@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PWA-config>
+  <swTemplate></swTemplate>
+  <baseIcon>res/pwa_icon.png</baseIcon>
+</PWA-config>
