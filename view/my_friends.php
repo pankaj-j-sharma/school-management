@@ -145,7 +145,7 @@ $my_index=$_SESSION["index_number"];
 $my_type=$_SESSION["type"];
 
 
-$current_year=date('Y');
+$current_year=2020;
 $sql="select * from my_friends where my_index='$my_index' and _status='Friend'";
 $result=mysqli_query($conn,$sql);
 
@@ -184,7 +184,7 @@ if(mysqli_num_rows($result) > 0){
 ?>   
                                 <tr>
                                     <td><img src="../<?php echo $friend_image; ?>" class="friend-image"></td>
-                                    <td id="td1_<?php echo $row['mf_id']; ?>">
+                                    <td id="td1_<?php echo $row['my_index']; ?>">
 									<a href="#"onClick="friendProfile('<?php echo $friend_type; ?>','<?php echo $friend_index; ?>')"><?php echo $friend_name; ?> </a><br>
                                         
                                         <?php 
@@ -197,7 +197,6 @@ if(mysqli_num_rows($result) > 0){
 													   where index_number='$friend_index' and year='$current_year'";
 												$result2=mysqli_query($conn,$sql2);
 												$row2=mysqli_fetch_assoc($result2);
-												
 												echo "<small> Student - ".$row2['g_name']."</small>";
 												
 											}
